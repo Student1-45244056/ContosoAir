@@ -23,7 +23,9 @@ steps:
     buildType: 'specific'
     project: '6b7641ca-82ea-481f-bed2-15cffeda5837'
     definition: '3'
+    specificBuildWithTriggering: true
     buildVersionToDownload: 'latest'
+    artifactName: 'drop'
     targetPath: '$(Pipeline.Workspace)'
 
 - task: AzureResourceManagerTemplateDeployment@3
