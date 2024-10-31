@@ -1,12 +1,11 @@
    pool:
-    name: 'default'
+     name: 'default'
    trigger:
      - master
    steps:
-      steps:
      - task: NodeTool@0
        inputs:
-      versionSpec: '14.x' 
+         versionSpec: '14.x'
      - task: CopyFiles@2
        displayName: 'Copy Files to: $(build.artifactstagingdirectory)/Templates'
        inputs:
